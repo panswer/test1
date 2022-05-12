@@ -15,6 +15,7 @@ services:
       - "traefik.http.routers.test1-secured.entrypoints=web-secured" # <== Defining entrypoint for https, **ref: line 31
       - "traefik.http.routers.test1-secured.tls.certresolver=mytlschallenge" # <== Defining certsresolvers for https
       - "traefik.http.services.test1-secured.loadbalancer.server.port=3000" # <== port running
+      - "traefik.docker.network=web"
 
     networks:
       - web
