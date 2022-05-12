@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-height: 650px;
+    --blue_transparent: #02557d99;
+    /* CARD OF CAREER 1 */
+    --career_width: 80%;
+    --career_height: 90%;
+    /* CARD OF CAREER 2 */
+    --career_2_width: 90%;
+    --career_2_height: 85%;
+    /* CARD OF CAREER 3 */
+    --career_3_width: 90%;
+    --career_3_height: 85%;
+}

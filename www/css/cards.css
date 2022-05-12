@@ -1,0 +1,74 @@
+.cards.container-fluid {
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.cards.container-fluid ul {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.cards.container-fluid ul li {
+    color: var(--primary);
+}
+
+.bar-orange {
+    background-color: var(--orange-color);
+    width: 15rem;
+    height: .2rem;
+}
+
+.cards.container-fluid ul li h3 {
+    font-weight: bold;
+}
+
+.cards.container-fluid .actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.cards.container-fluid .actions>.card {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 18rem;
+}
+
+.cards.container-fluid .actions>.card:nth-child(2),
+.cards.container-fluid .actions>.card:nth-child(3) {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cards.container-fluid .actions>.card:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.cards.container-fluid .actions>.card>.card-body {
+    border-top: .5rem solid var(--orange-color);
+}
+
+.cards.container-fluid .actions>.card>.card-body>.card-title {
+    text-align: center;
+}
+
+.cards.container-fluid .actions>.card>.card-body>a {
+    display: block;
+    width: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: var(--orange-color);
+    border: 1px solid white;
+}
+
+.cards.container-fluid button {
+    padding: 0.5rem 3rem;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+    margin: 4rem auto 2rem;
+    display: block;
+}

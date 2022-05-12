@@ -1,0 +1,228 @@
+.careers.container-fluid {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+    color: var(--orange-color);
+}
+
+.careers.container-fluid ul li h3 {
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.careers.container-fluid ul li span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.careers.container-fluid ul li .box-careers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "career_1 career_2 career_3" "career_1 career_2 career_4" "career_5 career_5 career_6";
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    height: 35rem;
+    width: 70rem;
+}
+
+.careers.container-fluid ul li .box-careers .career_1 {
+    grid-area: career_1;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_2 {
+    grid-area: career_2;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_1>.content,
+.careers.container-fluid ul li .box-careers .career_2>.content,
+.careers.container-fluid ul li .box-careers .career_3>.content,
+.careers.container-fluid ul li .box-careers .career_4>.content,
+.careers.container-fluid ul li .box-careers .career_5>.content,
+.careers.container-fluid ul li .box-careers .career_6>.content {
+    position: relative;
+    z-index: 1000;
+    width: var(--career_width);
+    height: var(--career_height);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.careers.container-fluid ul li .space_blank {
+    flex: auto;
+}
+
+.careers.container-fluid ul li .content>h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.careers.container-fluid ul li .content>button {
+    width: 7rem;
+    border-radius: 50px;
+    padding: 0.25rem 0;
+    background-color: var(--orange-color);
+    color: white;
+    border: .2rem solid white;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.careers.container-fluid ul li .box-careers .career_1>.bg-img,
+.careers.container-fluid ul li .box-careers .career_2>.bg-img {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: var(--career_width);
+    height: var(--career_height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers.container-fluid ul li .box-careers .career_1>.bg-img>img,
+.careers.container-fluid ul li .box-careers .career_2>.bg-img>img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.careers.container-fluid ul li .box-careers .career_1>.bg-blue,
+.careers.container-fluid ul li .box-careers .career_2>.bg-blue {
+    width: var(--career_width);
+    height: var(--career_height);
+    position: absolute;
+    top: 0;
+    background-color: var(--blue_transparent);
+    z-index: 500;
+}
+
+.careers.container-fluid ul li .box-careers .career_3 {
+    grid-area: career_3;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_4 {
+    grid-area: career_4;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_6 {
+    grid-area: career_6;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_3>.content,
+.careers.container-fluid ul li .box-careers .career_4>.content,
+.careers.container-fluid ul li .box-careers .career_6>.content {
+    height: var(--career_2_height);
+    width: var(--career_2_width);
+}
+
+.careers.container-fluid ul li .box-careers .career_3>.content>button,
+.careers.container-fluid ul li .box-careers .career_4>.content>button,
+.careers.container-fluid ul li .box-careers .career_6>.content>button {
+    margin-bottom: 2rem;
+}
+
+.careers.container-fluid ul li .box-careers .career_3>.bg-img,
+.careers.container-fluid ul li .box-careers .career_4>.bg-img,
+.careers.container-fluid ul li .box-careers .career_6>.bg-img {
+    position: absolute;
+    top: 0;
+    height: var(--career_2_height);
+    width: var(--career_2_width);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers.container-fluid ul li .box-careers .career_3>.bg-img>img,
+.careers.container-fluid ul li .box-careers .career_4>.bg-img>img,
+.careers.container-fluid ul li .box-careers .career_6>.bg-img>img {
+    height: auto;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.careers.container-fluid ul li .box-careers .career_3>.bg-blue,
+.careers.container-fluid ul li .box-careers .career_4>.bg-blue,
+.careers.container-fluid ul li .box-careers .career_6>.bg-blue {
+    background-color: var(--blue_transparent);
+    height: var(--career_2_height);
+    width: var(--career_2_width);
+    position: absolute;
+    top: 0;
+}
+
+.careers.container-fluid ul li .box-careers .career_5 {
+    grid-area: career_5;
+    position: relative;
+}
+
+.careers.container-fluid ul li .box-careers .career_5>.content {
+    position: relative;
+    height: var(--career_3_height);
+    width: var(--career_3_width);
+    z-index: 1000;
+}
+
+.careers.container-fluid ul li .box-careers .career_5>.bg-img {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: var(--career_3_height);
+    width: var(--career_3_width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.careers.container-fluid ul li .box-careers .career_5>.bg-img>img {
+    width: 100%;
+    height: auto;
+}
+
+.careers.container-fluid ul li .box-careers .career_5>.bg-blue {
+    position: absolute;
+    top: 0;
+    height: 85%;
+    width: 90%;
+    z-index: 500;
+    background-color: var(--blue_transparent);
+}
+
+.careers.container-fluid ul li .box-careers .content,
+.careers.container-fluid ul li .box-careers .bg-img,
+.careers.container-fluid ul li .box-careers .bg-blue {
+    border-radius: 10px;
+}
+
+.careers.container-fluid>a {
+    border: .15rem solid var(--orange-color);
+    padding: .5rem 2rem;
+    border-radius: 50px;
+    color: var(--orange-color);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.careers.container-fluid>a:hover {
+    text-decoration: none;
+}

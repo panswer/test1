@@ -1,0 +1,243 @@
+.f-icon {
+    font-weight: 900;
+}
+
+.container-fluid.bg-primary.text-white.section-1 {
+    padding: .5rem 2rem;
+    flex-wrap: wrap;
+    background-color: var(--primary) !important;
+}
+
+.blank_space {
+    flex: auto;
+}
+
+.container-fluid.bg-primary.text-white.section-1 .section-1_1 .content-icon {
+    padding: 0 .5rem;
+}
+
+.container-fluid.bg-primary.text-white.section-1 .content-icon {
+    margin: 0 1rem;
+}
+
+
+/* 
+    HEADER WITH NAVBAR
+*/
+
+header.container-fluid {
+    position: relative;
+    padding: 0;
+    height: var(--header-height);
+}
+
+header.container-fluid .img-back {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: var(--header-height);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.container-fluid .img-back img {
+    width: 100%;
+    height: auto;
+}
+
+header.container-fluid .img-back .blue-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 30, 0.5);
+}
+
+header.container-fluid .nav {
+    z-index: 100;
+    position: relative;
+    width: 98%;
+    padding: 1rem 5rem 0;
+}
+
+header.container-fluid .nav img {
+    height: 4rem;
+    width: auto;
+}
+
+
+/* 
+    WELCOME AND FORM REGISTER NOW
+*/
+
+header.container-fluid .container-fluid {
+    position: relative;
+    z-index: 100;
+    padding: 0 5rem;
+    height: 570px;
+}
+
+header.container-fluid .container-fluid>.row {
+    height: 100%;
+}
+
+
+/* 
+    WELCOME
+*/
+
+header.container-fluid .container-fluid>.row>.col:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header.container-fluid .container-fluid>.row>.col:first-child .bar-orange {
+    height: 0.2rem;
+    background-color: var(--orange-color);
+    width: 12rem;
+    margin: 0.5rem 0;
+}
+
+header.container-fluid .container-fluid>.row>.col:first-child>button {
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* 
+    FORM REGISTER NOW
+*/
+
+header.container-fluid .container-fluid>.row>.col:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form {
+    /* width: 70%; */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form {
+    display: grid;
+    grid-template-areas: "header header" "name name" "email_phone email_phone" "subject subject" "message message" "button button";
+    grid-template-columns: repeat(2, 1fr);
+    width: 25rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 30, 0.3);
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form h3 {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    grid-area: header;
+    background-color: var(--primary);
+    color: white;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: .2rem solid var(--orange-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .name {
+    width: 100%;
+    grid-area: name;
+    margin-top: 1.5rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .name #name {
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--gray-color);
+    padding: .5rem 1rem;
+    width: 20rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .email.phone {
+    width: 20rem;
+    grid-area: email_phone;
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    justify-self: center;
+    margin-top: 1.5rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .email.phone #email {
+    border-radius: 50px;
+    background-color: var(--gray-color);
+    padding: 0.5rem 1rem;
+    border: 0;
+    width: 9.5rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .email.phone #phone {
+    border-radius: 50px;
+    background-color: var(--gray-color);
+    padding: 0.5rem 1rem;
+    border: 0;
+    width: 9.5rem;
+    justify-self: end;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .subject {
+    width: 20rem;
+    justify-self: center;
+    margin-top: 1.5rem;
+    grid-area: subject;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .subject #subject {
+    border-radius: 50px;
+    background-color: var(--gray-color);
+    padding: 0.5rem 1rem;
+    border: 0;
+    width: 20rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .message {
+    width: 20rem;
+    justify-self: center;
+    margin-top: 1.5rem;
+    grid-area: message;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .message #message {
+    border-radius: 10px;
+    background-color: var(--gray-color);
+    padding: 0.5rem 1rem;
+    border: 0;
+    width: 20rem;
+    resize: none;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .btn-send {
+    grid-area: button;
+    width: 20rem;
+    justify-self: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+header.container-fluid .container-fluid>.row>.col:last-child>form .btn-send>button {
+    background-color: var(--orange-color);
+    border-radius: 50px;
+    padding: 0.5rem 3rem;
+    border: 1px solid white;
+    color: white;
+}
