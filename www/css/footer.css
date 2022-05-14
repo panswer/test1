@@ -1,0 +1,115 @@
+footer.container-fluid {
+    height: 30rem;
+    background-color: var(--primary);
+    display: flex;
+    padding: 0 5rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer.container-fluid .web-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 423px;
+}
+
+footer.container-fluid .web-information .logo-university {
+    width: 10rem;
+}
+
+footer.container-fluid .web-information .logo-university img {
+    width: 100%;
+    height: auto;
+}
+
+footer.container-fluid .web-information .quick-links {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+}
+
+footer.container-fluid .web-information .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+}
+
+footer.container-fluid .web-information .newsletter {
+    display: flex;
+    flex-direction: column;
+    height: 220.797px;
+    width: 13rem;
+}
+
+footer.container-fluid .web-information .newsletter .switch {
+    justify-self: center;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    height: 30px;
+    position: relative;
+}
+
+footer.container-fluid .web-information .newsletter .switch input {
+    display: none;
+}
+
+footer.container-fluid .web-information .newsletter .switch input:checked+label {
+    left: 0;
+    right: auto;
+    background-color: var(--primary);
+}
+
+footer.container-fluid .web-information .newsletter .switch label {
+    border-radius: 50px;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid white;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    left: auto;
+    font-size: 0.7rem;
+    transition: all .6s ease;
+}
+
+footer.container-fluid .web-information h4 {
+    color: var(--orange-color);
+    margin-bottom: 2rem;
+}
+
+footer.container-fluid .web-information a,
+footer.container-fluid .web-information span {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer.container-fluid .web-information a:hover {
+    text-decoration: none;
+}
+
+footer.container-fluid .copyright {
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+footer.container-fluid .copyright .copyright-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer.container-fluid .copyright .img-logo {
+    width: 8rem;
+}
+
+footer.container-fluid .copyright .img-logo img {
+    width: 100%;
+    height: auto;
+}

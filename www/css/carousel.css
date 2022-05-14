@@ -1,0 +1,139 @@
+.carousel.container-fluid {
+    margin-top: 3rem;
+}
+
+.carousel.container-fluid .container {
+    height: 30rem;
+    width: 50rem;
+    position: relative;
+    padding: 0;
+}
+
+.carousel.container-fluid .container .bg-img {
+    margin: 0 auto 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.carousel.container-fluid .container .bg-img img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel.container-fluid .container .bg-blue {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--blue_transparent);
+    z-index: 500;
+}
+
+.carousel.container-fluid .container .container-fluid {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.carousel.container-fluid .container .container-fluid .row {
+    height: 100%;
+    margin: 0;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:first-child {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:first-child h5 {
+    font-size: 0.7rem;
+    margin-top: 25%;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:first-child h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide {
+    width: 15rem;
+    height: 18rem;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide ol li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    border: 0;
+    opacity: 1;
+    transition: color .6s ease;
+    background-color: white;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide ol li.active {
+    background-color: var(--orange-color);
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner {
+    height: 90%;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .carousel-item {
+    height: 100%;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .img {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .btn-action {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .btn-action a {
+    background-color: white;
+    padding: 0.5rem 0;
+    width: 11rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: var(--orange-color);
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video {
+    width: 100%;
+    height: 90%;
+    background-color: #00000088;
+    position: absolute;
+    z-index: 500;
+}
