@@ -7,10 +7,6 @@ services:
     labels:
       #### Labels define the behavior and rules of the traefik proxy for this container ####
       - "traefik.enable=true" # <== Enable traefik to proxy this container
-      # - "traefik.http.routers.test1.rule=Host(`silvera.mytestingenlocal.ml`)" # <== Your Domain Name goes here for the http rule
-      # - "traefik.http.routers.test1.entrypoints=web" # <== Defining the entrypoint for http, **ref: line 30
-      # - "traefik.http.routers.test1.middlewares=redirect@file" # <== This is a middleware to redirect to https
-      # - "traefik.http.services.test1.loadbalancer.server.port=3000" # <== port running
       - "traefik.http.routers.test1-secured.rule=Host(`silvera.mytestingenlocal.ml`)" # <== Your Domain Name for the https rule
       - "traefik.http.routers.test1-secured.entrypoints=web-secured" # <== Defining entrypoint for https, **ref: line 31
       - "traefik.http.routers.test1-secured.tls.certresolver=mytlschallenge" # <== Defining certsresolvers for https
