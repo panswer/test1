@@ -28,18 +28,34 @@ footer.container-fluid .web-information .quick-links {
     display: flex;
     flex-direction: column;
     width: 13rem;
+    height: 221px;
 }
 
 footer.container-fluid .web-information .contact-info {
     display: flex;
     flex-direction: column;
     width: 13rem;
+    height: 221px;
+}
+
+footer.container-fluid .web-information .contact-info>.content-icon {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer.container-fluid .web-information .contact-info .social-media {
+    display: flex;
+    color: white;
+}
+
+footer.container-fluid .web-information .contact-info .social-media .content-icon {
+    margin: 0 .5rem;
 }
 
 footer.container-fluid .web-information .newsletter {
     display: flex;
     flex-direction: column;
-    height: 220.797px;
+    height: 221px;
     width: 13rem;
 }
 

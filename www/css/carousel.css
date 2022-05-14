@@ -113,7 +113,7 @@
     text-align: center;
     width: 100%;
     bottom: 10px;
-    z-index: 1000;
+    z-index: 1000 !important;
 }
 
 .carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .btn-action a {
@@ -127,7 +127,7 @@
     color: var(--orange-color);
     font-weight: bold;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 1000 !important;
 }
 
 .carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video {
@@ -135,5 +135,62 @@
     height: 90%;
     background-color: #00000088;
     position: absolute;
+    z-index: 500 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video video {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input:checked~video {
+    display: block;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input {
+    display: none;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video label {
+    position: relative;
     z-index: 500;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    color: var(--orange-color);
+    display: none;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video label svg {
+    height: 4rem;
+    width: 4rem;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input:not(:checked)~#play {
+    display: block;
+    opacity: 0;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input:not(:checked)~#play:hover {
+    opacity: 1;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input:checked~#stop {
+    display: block;
+    opacity: 0;
+}
+
+.carousel.container-fluid .container .container-fluid .row .col:last-child .carousel.slide .carousel-inner .video input:checked~#stop:hover {
+    opacity: 1;
 }
